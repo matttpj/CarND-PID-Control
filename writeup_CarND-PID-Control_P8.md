@@ -57,6 +57,17 @@ The code for Path Planning and Generating Paths is included in file **_main.cpp_
 | Describe the effect each of the P, I, D components had in your implementation. 	| Student describes the effect of the P, I, D component of the PID algorithm in their implementation. Is it what you expected? Visual aids are encouraged, i.e. record of a small video of the car in the simulator and describe what each component is set to.	|  PASS |
 | Describe how the final hyperparameters were chosen. | Student discusses how they chose the final hyperparameters (P, I, D coefficients). This could be have been done through manual tuning, twiddle, SGD, or something else, or a combination!	|  PASS |
 
+__Proportional >>__  
+__Integral >>__  
+__Differential >>__  
+
+0.25 - 0.0 - 2.5
+CTE: 0.2964 Steering Value: -0.3661
+Best Error: -1.7195
+Car gets all the way around the track with slightly less wild oscillations.
+
+
+
 __Localization [line 79](https://github.com/matttpj/CarND-Path-Planning/blob/master/src/main.cpp#L79) >>__ The simulator provides information about position of my car on the track, including: x, y, s, d, theta, yaw, speed.
 
 
