@@ -31,6 +31,11 @@ class PID {
    */
   double TotalError();
 
+  /**
+   * Returns the minimum cross track error
+   **/
+  double BestError();
+
  private:
   /**
    * PID Errors
@@ -38,13 +43,19 @@ class PID {
   double p_error;
   double i_error;
   double d_error;
+  double prev_cte;
+  long counter;
+  double error_sum;
+  double total_error;
+  double best_error;
 
   /**
    * PID Coefficients
-   */ 
+   */
   double Kp;
   double Ki;
   double Kd;
+
 };
 
 #endif  // PID_H
