@@ -13,11 +13,12 @@ The major steps taken to complete this project included:
 * Getting familiar with the commands needed in the Udacity workspace to compile project code and launch the driving simulator
 * Writing my code in __main.cpp__ and __PID.cpp__ to enable my car to drive around the track  
 * Adapting my code to ensure that my car does not violate any of the requirements defined in the [project rubric](https://review.udacity.com/#!/rubrics/1972/view)
+* Adjusting the hyper-parameters so that my car can successfully drive one lap of the track
 * Describing the effects of the P,I,D components in my implementation and how final hyper-parameters were chosen **_[see below](#Reflection)_**
 
 
 [//]: # (Image References)
-__Screenshot and Video from the driving simulator__    
+__Screenshot and video from the driving simulator__    
 <img src="./pid_control.jpg" width=60% height=60%>  
 [download video](https://github.com/matttpj/CarND-PID-Control/raw/master/pid_control_success.mp4)
 
