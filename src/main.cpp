@@ -37,8 +37,8 @@ int main() {
   /**
    * TODO: Initialize the pid variable.
    */
-  //pid.Init(0.15, 0.0, 2.5);
-  pid.Init(0.0, 0.0, 2.0);
+  //pid.Init(0.0, 0.0, 0.0);
+  pid.Init(0.15, 0.0, 2.5);
 
 
   h.onMessage([&pid](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length,
