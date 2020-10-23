@@ -17,9 +17,9 @@ The major steps taken to complete this project included:
 
 
 [//]: # (Image References)
-__Screenshot and Video from the driving simulator__  
-<img src="./pid_control.jpg" width=60% height=60%>
-[download video](https://github.com/matttpj/CarND-PID-Control/pid_control_success.mp4)
+__Screenshot and Video from the driving simulator__    
+<img src="./pid_control.jpg" width=60% height=60%>  
+[download video](https://github.com/matttpj/CarND-PID-Control/raw/master/pid_control_success.mp4)
 
 ---
 ### Writeup / README
@@ -60,6 +60,7 @@ __Localization [line 79](https://github.com/matttpj/CarND-Path-Planning/blob/mas
 
 
 ### Simulation
+Follow the link to [download video](https://github.com/matttpj/CarND-PID-Control/raw/master/pid_control_success.mp4)
 | Criteria       		|     Specification	        					|    Status  |
 |:---------------------:|:-------------------------------:|:--------:|
 | The vehicle must successfully drive a lap around the track.	| No tire may leave the drivable portion of the track surface. The car may not pop up onto ledges or roll over any surfaces that would otherwise be considered unsafe (if humans were in the vehicle). |  PASS |
