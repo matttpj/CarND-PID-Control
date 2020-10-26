@@ -57,15 +57,15 @@ The code for PID Control is included in file **_main.cpp_** from **line 33** onw
 | Describe the effect each of the P, I, D components had in your implementation. 	| Student describes the effect of the P, I, D component of the PID algorithm in their implementation. Is it what you expected? Visual aids are encouraged, i.e. record of a small video of the car in the simulator and describe what each component is set to.	|
 | Describe how the final hyperparameters were chosen. | Student discusses how they chose the final hyperparameters (P, I, D coefficients). This could be have been done through manual tuning, twiddle, SGD, or something else, or a combination!	|
 
-__Proportional Error >>__  This is the Cross Track Error (cte) provided by the simulator.  **cte** error is the distance from the centre of my car to the centre of the track.
-__Integral Error >>__  This is the cumulative value of **cte** error over previous time periods.
+__Proportional Error >>__  This is the Cross Track Error (cte) provided by the simulator.  **cte** error is the distance from the centre of my car to the centre of the track.  
+__Integral Error >>__  This is the cumulative value of **cte** error over previous time periods.  
 __Differential Error >>__  This is the difference value between current time period **cte** and previous time period **prev_cte**.  
-__Total Error >>__ This is the sum of **P,I,D** errors each multiplied by their respective hyper-parameter **Kp, Ki, Kd** which are initialised in **main.cpp, line 41**.
-__Best Error >>__ This is the smallest value of **cte** achieved during a simulation run.
-__Steer Value >>__ This is the steering value sent as input to the simulator and is calculated as current steering value less the Total Error calculated by the PID class.
+__Total Error >>__ This is the sum of **P,I,D** errors each multiplied by their respective hyper-parameter **Kp, Ki, Kd** which are initialised in **main.cpp, line 41**.  
+__Best Error >>__ This is the smallest value of **cte** achieved during a simulation run.  
+__Steer Value >>__ This is the steering value sent as input to the simulator and is calculated as current steering value less the Total Error calculated by the PID class.  
 
 I tuned the hyper-parameters **Kp, Ki, Kd** manually over successive simulation rounds until I was able to get my car to successfully drive 1 lap around the track.
-Here is a log of my tuning settings.
+Here is a log of my tuning settings.  
 
 **Kp: 0.0 | Ki: 0.0 | Kd: 0.0**  
 CTE: 21.7944 | Steering Value: 0  
