@@ -23,9 +23,8 @@ void PID::Init(double Kp_, double Ki_, double Kd_) {
    // Previous cte
    prev_cte = 0.0;
 
-   // Counters
-   counter = 0;
-   error_sum = 0.0;
+   // Best error
+   best_error = 0.0;
 
 }
 
@@ -44,9 +43,6 @@ void PID::UpdateError(double cte) {
   d_error = cte - prev_cte;
 
   prev_cte = cte;
-
-  error_sum += cte;
-  counter++;
 
   if(cte < best_error){
     best_error = cte;

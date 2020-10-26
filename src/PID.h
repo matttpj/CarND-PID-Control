@@ -44,8 +44,6 @@ class PID {
   double i_error;
   double d_error;
   double prev_cte;
-  long counter;
-  double error_sum;
   double total_error;
   double best_error;
 
