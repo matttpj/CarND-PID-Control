@@ -103,16 +103,17 @@ Best Error: -1.427
 Car gets all the way round the track!!!  
 
 **Kp: 0.25 | Ki: 0.0 | Kd: 2.5**  
-CTE: 0.3689 Steering Value: -0.537975  
-Best Error: -1.5596  
+CTE: 0.182 Steering Value: 0.1195
+Best Error: -1.6664
 Car gets all the way around the track with slightly less wild oscillations.  
 
-I found that to successively drive around the track it was not necessary to tune the Integral Error hyper-parameter to meet the project rubric.  If I had continued to experiment I would have adjusted my TotalError algorithm to use Twiddle; whereby the **Ki** is multiplied by 2.
+I found that to successively drive around the track it was not necessary to tune the Integral Error hyper-parameter to meet the project rubric.  If I had continued to experiment I would have adjusted my TotalError algorithm to use Twiddle; whereby the **Ki** is multiplied by -2.
 
 I also experimented with adding a PID controller to modify the vehicle throttle as suggested in the starter code.  However, after multiple rounds of experimentation I was unable to improve on above performance; hence I have omitted this code from project submission.  I would appreciate feedback from the reviewer as to how best to utilise **speed** and **steering_angle** successfully in a PID Control implementation.
 
 ### Simulation
 | Criteria       		|     Specification	        					|    Status  |
 |:---------------------:|:-------------------------------:|:--------:|
-| The vehicle must successfully drive a lap around the track.	| No tire may leave the drivable portion of the track surface. The car may not pop up onto ledges or roll over any surfaces that would otherwise be considered unsafe (if humans were in the vehicle). |  PASS |
+| The vehicle must successfully drive a lap around the track.	| No tire may leave the drivable portion of the track surface. The car may not pop up onto ledges or roll over any surfaces that would otherwise be considered unsafe (if humans were in the vehicle). |  PASS |  
+
 Follow the link to [download video](https://github.com/matttpj/CarND-PID-Control/raw/master/pid_control_success.mp4)
