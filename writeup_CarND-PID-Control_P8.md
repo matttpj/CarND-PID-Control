@@ -107,7 +107,7 @@ CTE: 0.182 Steering Value: 0.1195
 Best Error: -1.6664
 Car gets all the way around the track with slightly less wild oscillations.  
 
-I found that to successively drive around the track it was not necessary to tune the Integral Error hyper-parameter to meet the project rubric.  If I had continued to experiment I would have adjusted my TotalError algorithm to use Twiddle; whereby the **Ki** is multiplied by -2.
+I found that to successively drive around the track it was not necessary to tune the Integral Error hyper-parameter to meet the project rubric.  If I had continued to experiment I would have re-written my TotalError algorithm to use Twiddle. With Twiddle, the **Kp, Ki, Kd** hyper-parameters are initialised to 1, the **Ki** parameter is multiplied by -2 and the algorithm constructed so that it finds optimal values for the coefficients.
 
 I also experimented with adding a PID controller to modify the vehicle throttle as suggested in the starter code.  However, after multiple rounds of experimentation I was unable to improve on above performance; hence I have omitted this code from project submission.  I would appreciate feedback from the reviewer as to how best to utilise **speed** and **steering_angle** successfully in a PID Control implementation.
 
