@@ -37,12 +37,13 @@ void PID::UpdateError(double cte) {
   // Proportional Error
   p_error = cte;
 
-  // Differential Error
-  d_error = cte - prev_cte;
-  prev_cte = cte;
-
   // Integral Error
   i_error += cte;
+
+  // Differential Error
+  d_error = cte - prev_cte;
+
+  prev_cte = cte;
 
   error_sum += cte;
   counter++;
